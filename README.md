@@ -3,8 +3,11 @@
 Full-cycle benchmark study focused on Kurukshetra district and neighbouring clusters, with state-wide context. Research date: **10 November 2026**.
 
 - Open [`index.html`](./index.html) in a browser, or read [`index.md`](./index.md).
-- Status on the page: draft for review until the focus district is confirmed and the draft line is cleared.
-- Crawlers: [`robots.txt`](./robots.txt) disallows indexing. The HTML also carries `noindex, nofollow, noai, noimageai`.
+- Crawlers: [`robots.txt`](./robots.txt) disallows indexing. The HTML also carries `noindex, nofollow, noarchive, noimageindex`.
 - Reuse: see [`LICENSE`](./LICENSE). Permission is required before reuse, republication, or AI training.
+
+## Disclaimer
+
+> A study conducted by Vipul Anand using Grok chief of staff and research team lead. Special thanks to engineering team for publishing it to make it available for those interested in diversifying from mono culture in haryana from wheat and paddy cycles and looking forward to adapting variety of crops in the future timelines.
 
 Default branch: `vipul`.
