@@ -8,7 +8,6 @@ date: "Research date: 10 November 2026"
 
 **Focus area:** Kurukshetra district (Thanesar and Pehowa areas), with neighbouring Karnal, Yamunanagar, Panipat and Sonipat, plus state-wide figures.
 **Research date:** 10 November 2026 (all "today" prices are as reported on or before this date).
-**Status:** Draft for review. It has not been published.
 
 > **How to read this study.** Every claim has a numbered source [S#] with the date of the figure. Anything I could not check against a primary or reliable source is marked **Unverified**. Where public data does not exist, the study says so. Prices change daily, so treat them as reference points, not quotes. This study is general information. It is not financial or investment advice.
 
@@ -283,4 +282,6 @@ All checked on 10 Nov 2026 (IST). "OK" means the page loaded (HTTP 200 by curl o
 
 ---
 
-*Prepared as a draft research study, Nov 2026. General information only; not financial or investment advice. Check prices, fees and scheme terms with the source before acting.*
+**Disclaimer:** A study conducted by Vipul Anand using Grok chief of staff and research team lead. Special thanks to engineering team for publishing it to make it available for those interested in diversifying from mono culture in haryana from wheat and paddy cycles and looking forward to adapting variety of crops in the future timelines.
+
+*Research study, Nov 2026. General information only; not financial or investment advice. Check prices, fees and scheme terms with the source before acting.*
