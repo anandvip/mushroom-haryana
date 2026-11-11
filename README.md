@@ -3,6 +3,7 @@
 Full-cycle benchmark study focused on Kurukshetra district and neighbouring clusters, with state-wide context. Research date: **10 November 2026**.
 
 - Open [`index.html`](./index.html) in a browser, or read [`index.md`](./index.md).
+- Field-trip plan for Solan (after 16 November 2026): [`field-trip-solan.md`](./field-trip-solan.md).
 - Crawlers: [`robots.txt`](./robots.txt) disallows indexing. The HTML also carries `noindex, nofollow, noarchive, noimageindex`.
 - Reuse: see [`LICENSE`](./LICENSE). Permission is required before reuse, republication, or AI training.
 
