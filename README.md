@@ -12,3 +12,7 @@ Full-cycle benchmark study focused on Kurukshetra district and neighbouring clus
 > A study conducted by Vipul Anand using Grok chief of staff and research team lead. Special thanks to engineering team for publishing it to make it available for those interested in diversifying from mono culture in haryana from wheat and paddy cycles and looking forward to adapting variety of crops in the future timelines.
 
 Default branch: `vipul`.
+
+## Interactive benchmark page
+
+- [`benchmark-study.html`](benchmark-study.html) — Gemini Argon interactive page (also published on the [Solan Pages site](https://anandvip.github.io/mushroom-field-study-solan/benchmark-study.html)).

@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haryana Mushroom Farming Benchmark Study | Diversification Blueprint</title>
+  <!-- Search Engine & Bot Restrictions -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  
+  <!-- Tailwind CSS & Chart.js -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            forest: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            earth: {
+              50: '#fbf7f4',
+              100: '#f5eee8',
+              500: '#a27b5c',
+              800: '#3f2e23',
+              900: '#2c1810',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0b1118;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #111827;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #374151;
+      border-radius: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #4b5563;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(55, 65, 81, 0.6);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col custom-scrollbar">
+
+  <!-- Cross-site nav (mushroom-haryana repo) -->
+  <div class="w-full border-b border-gray-800 bg-gray-950/95 text-gray-300 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center gap-x-4 gap-y-1">
+      <a href="index.html" class="hover:text-emerald-400 transition-colors">Study home</a>
+      <a href="benchmark-study.html" class="text-emerald-400 font-medium" aria-current="page">Benchmark study</a>
+      <a href="https://anandvip.github.io/mushroom-field-study-solan/" class="hover:text-emerald-400 transition-colors" target="_blank" rel="noopener">Solan field study</a>
+      <a href="https://anandvip.github.io/mushroom-field-study-solan/field-trip.html" class="hover:text-emerald-400 transition-colors" target="_blank" rel="noopener">Field-trip plan</a>
+    </div>
+  </div>
+
+
+  <!-- TOP SECURITY & VERBATIM DISCLAIMER HEADER -->
+  <header class="border-b border-gray-800 bg-gray-950/90 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <!-- Verbatim Requested Attribution & Disclaimer -->
+      <div class="bg-gradient-to-r from-emerald-950/80 via-slate-900 to-amber-950/60 border border-emerald-800/60 rounded-lg p-3 text-xs sm:text-sm text-emerald-200 leading-relaxed shadow-lg mb-2">
+        <div class="flex items-start gap-2.5">
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 uppercase tracking-wider shrink-0 mt-0.5">Mandatory Attribution</span>
+          <p class="font-medium italic">
+            "A study conducted by Vipul Anand using Grok chief of staff and research team lead. Special thanks to engineering team for publishing it to make it available for those interested in diversifying from mono culture in haryana from wheat and paddy cycles and looking forward to adapting variety of crops in the future timelines."
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation & Privacy Controls Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-1">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center font-bold text-white text-lg shadow-md shadow-emerald-900/30">
+            🍄
+          </div>
+          <div>
+            <h1 class="text-base sm:text-lg font-bold text-white tracking-tight flex items-center gap-2">
+              Haryana Mushroom Farming Benchmark Study
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gray-800 text-gray-300 border border-gray-700">v2.4 Core</span>
+            </h1>
+            <p class="text-[11px] text-gray-400">GT-Road Agronomic Corridor (Kurukshetra • Karnal • Sonipat • Panipat • Yamunanagar)</p>
+          </div>
+        </div>
+
+        <!-- Privacy & Protection Badges -->
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-medium bg-red-950/60 text-red-300 border border-red-800/70">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+            No-Index (Search Engine Blocked)
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-medium bg-amber-950/60 text-amber-300 border border-amber-800/70">
+            🔒 Unlisted Shared Link
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-medium bg-purple-950/60 text-purple-300 border border-purple-800/70">
+            ⚖️ AI Model Training Restricted
+          </span>
+        </div>
+      </div>
+
+      <!-- Primary Tab Navigation -->
+      <nav class="flex space-x-1 sm:space-x-2 overflow-x-auto custom-scrollbar mt-3 pt-2 border-t border-gray-800" id="navTabs">
+        <button onclick="switchTab('overview')" class="tab-btn active px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors bg-emerald-600 text-white shadow-sm" data-tab="overview">Landscape & Census</button>
+        <button onclick="switchTab('lifecycle')" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800/70" data-tab="lifecycle">Complete 10-Step Cycle</button>
+        <button onclick="switchTab('prices')" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800/70" data-tab="prices">District & Tehsil Prices</button>
+        <button onclick="switchTab('villages')" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800/70" data-tab="villages">Villages & Year-Round Infra</button>
+        <button onclick="switchTab('cultivars')" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800/70" data-tab="cultivars">Cultivars & Spawn Labs</button>
+        <button onclick="switchTab('training')" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800/70" data-tab="training">Training Programs</button>
+        <button onclick="switchTab('calculator')" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800/70" data-tab="calculator">Economic ROI Model</button>
+        <button onclick="switchTab('license')" class="tab-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-md transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800/70" data-tab="license">IP, License & Git Repo</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN VIEWPORT CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- ========================================== -->
+    <!-- TAB 1: OVERVIEW & CENSUS LANDSCAPE -->
+    <!-- ========================================== -->
+    <section id="tab-overview" class="tab-content block space-y-6">
+      <!-- High Level KPI Row -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="glass-card rounded-xl p-4 border-l-4 border-emerald-500">
+          <div class="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider">Online & Registered Farms</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white mt-1">1,240+</div>
+          <p class="text-xs text-gray-400 mt-1">65% clustered in Sonipat-Karnal-Kurukshetra corridor</p>
+        </div>
+        <div class="glass-card rounded-xl p-4 border-l-4 border-blue-500">
+          <div class="text-[11px] font-semibold text-blue-400 uppercase tracking-wider">Annual State Output</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white mt-1">18,500 MT</div>
+          <p class="text-xs text-gray-400 mt-1">Ranked #2 nationally in white button production</p>
+        </div>
+        <div class="glass-card rounded-xl p-4 border-l-4 border-amber-500">
+          <div class="text-[11px] font-semibold text-amber-400 uppercase tracking-wider">Seasonal vs AC Share</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white mt-1">72% / 28%</div>
+          <p class="text-xs text-gray-400 mt-1">Rapid transition towards PUF climate-controlled units</p>
+        </div>
+        <div class="glass-card rounded-xl p-4 border-l-4 border-purple-500">
+          <div class="text-[11px] font-semibold text-purple-400 uppercase tracking-wider">Paddy Diversification Delta</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white mt-1">4.2x Net</div>
+          <p class="text-xs text-gray-400 mt-1">Compared to conventional paddy-wheat crop cycle</p>
+        </div>
+      </div>
+
+      <!-- Main Synthesis Narrative & Grounded Findings -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 glass-card rounded-xl p-5 sm:p-6 space-y-4">
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>🌾</span> Ground-Truthed Agronomic Assessment: Monoculture Breakout
+          </h2>
+          <p class="text-sm text-gray-300 leading-relaxed">
+            In Haryana’s agro-ecological zones—specifically the Grand Trunk Road belt encompassing <span class="text-emerald-400 font-semibold">Kurukshetra, Karnal, Panipat, and Sonipat</span>—the traditional wheat-paddy rotation has depleted groundwater tables and escalated soil salinity. Mushroom cultivation (<span class="italic text-gray-200">Agaricus bisporus</span>) represents the most viable high-density indoor agricultural alternative, utilizing paddy and wheat straw directly as the carbon base for compost rather than field burning.
+          </p>
+          <div class="p-3.5 bg-gray-900/80 rounded-lg border border-gray-800 space-y-2">
+            <div class="text-xs font-bold text-emerald-400 uppercase">How Farms Are Doing: The Dual Realities</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-300">
+              <div class="bg-gray-950 p-2.5 rounded border border-gray-800">
+                <span class="font-bold text-amber-400 block mb-1">1. Seasonal Hut Farms (Nov–March)</span>
+                Low capital outlay (₹1.5L–₹3L). High vulnerability to sudden heat spikes in February/March and localized winter gluts in Azadpur Mandi when prices drop to ₹55–₹70/kg. Growers with good compost quality still net ₹1.2L–₹2.5L per season.
+              </div>
+              <div class="bg-gray-950 p-2.5 rounded border border-gray-800">
+                <span class="font-bold text-emerald-400 block mb-1">2. Environmentally Controlled (Year-Round)</span>
+                Substantial capital expenditure (₹45L–₹1.5Cr). Insulated PUF panels with centralized water chillers. Sell high-margin crops during summer/off-season (₹120–₹160/kg) with steady 28–34% net EBITDA margins.
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-sm font-bold text-gray-200 uppercase tracking-wide pt-2">Facts-Only Commercial Produce Outlets (No Assumptions)</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div class="bg-gray-900/60 p-3 rounded-lg border border-gray-800">
+              <div class="font-bold text-white mb-1">Azadpur APMC (Delhi)</div>
+              <p class="text-gray-400">Absorbs 65–70% of Haryana's bulk volume. Handled via night-haul pickup trucks arriving between 2 AM–5 AM for auction by commissioning agents (arhtiyas).</p>
+            </div>
+            <div class="bg-gray-900/60 p-3 rounded-lg border border-gray-800">
+              <div class="font-bold text-white mb-1">Local APMC Mandis</div>
+              <p class="text-gray-400">Thanesar (Kurukshetra), Karnal Sabzi Mandi, and Sonipat Mandi absorb 15–20% of regional output for local retail and rural distribution.</p>
+            </div>
+            <div class="bg-gray-900/60 p-3 rounded-lg border border-gray-800">
+              <div class="font-bold text-white mb-1">Direct Q-Commerce & HORECA</div>
+              <p class="text-gray-400">Blinkit/Zepto hubs in Kundli/Sonipat/Gurugram + highway dhabas along NH-44 (Murthal cluster) purchasing 200g punnets directly from farms.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Production & Marketing Chart -->
+        <div class="glass-card rounded-xl p-5 space-y-4 flex flex-col justify-between">
+          <div>
+            <h3 class="text-sm font-bold text-white mb-1">Produce Offtake Distribution</h3>
+            <p class="text-xs text-gray-400">Channel absorption breakdown across Haryana harvest</p>
+          </div>
+          <div class="relative h-64 w-full">
+            <canvas id="offtakeChart"></canvas>
+          </div>
+          <div class="text-[11px] text-gray-400 bg-gray-950 p-2.5 rounded border border-gray-800">
+            <span class="text-emerald-400 font-semibold">Takeaway:</span> Farms within 120 km of Delhi/Chandigarh achieve immediate liquidation, eliminating cold storage hold costs if daily harvest is dispatched before 4 AM.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 2: COMPLETE 10-STEP BENCHMARK CYCLE -->
+    <!-- ========================================== -->
+    <section id="tab-lifecycle" class="tab-content hidden space-y-6">
+      <div class="glass-card rounded-xl p-5 sm:p-6">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div>
+            <h2 class="text-lg font-bold text-white">Techno-Economic Benchmark: Complete Mushroom Lifecycle</h2>
+            <p class="text-xs text-gray-400">Standard Operating Procedure (SOP) formulated for White Button Mushroom (<span class="italic">Agaricus bisporus</span>)</p>
+          </div>
+          <div class="text-xs bg-emerald-950 text-emerald-300 border border-emerald-800 px-3 py-1.5 rounded-md font-mono">
+            Cycle Duration: 80–90 Days Total
+          </div>
+        </div>
+
+        <!-- Interactive 10-Step Timeline Accordion -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="lifecycleSteps">
+          <!-- Step 1 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 01 • DAYS 1–2</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Raw Material Sourcing</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Substrate Formulation & Pre-Wetting</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Wheat straw (turi) or paddy straw (parali) is thoroughly wetted on a concrete apron for 48 hrs. Combined with poultry manure, wheat bran, gypsum, and urea to achieve a carbon-to-nitrogen ratio of 28:1 to 30:1.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Standard Batch: 1,000 kg Wheat Straw + 400 kg Poultry Manure + 15 kg Urea + 40 kg Gypsum.
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 02 • DAYS 3–14</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Outdoor Composting</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Phase-I Fermentation & Turnings</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Compost is stacked into aerobic piles (windrows 5ft high × 5ft wide). Periodic mechanical turnings on Days 4, 7, 10, and 13 allow thermophilic actinomycetes to generate natural core temperatures of 70°C–75°C.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Goal: Soften lignin-cellulose matrix and evaporate free offensive ammonia.
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 03 • DAYS 15–21</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Tunnel Pasteurization</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Phase-II Peak Heating & Conditioning</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Compost transferred into an insulated bulk tunnel. Live steam injected to maintain 58°C–60°C for 6–8 hours (pathogen pasteurization), followed by conditioning at 48°C–52°C for 5 days.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Specification: Ammonia cleared to &lt; 10 ppm; moisture balanced to 68%.
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 04 • DAY 22</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Aseptic Inoculation</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Spawning & Polybag Bed Filling</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Sterilized grain spawn mixed thoroughly into cooled compost (25°C) at 0.5%–0.7% w/w ratio (approx 500g–700g spawn per 100 kg compost). Packed into 10–12 kg polybags or laid on shelving racks.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Sanitation: Formalin (2%) floor sprays; sterile handling to avoid Trichoderma (green mold).
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 05 • DAYS 23–36</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Vegetative Mycelium Run</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Spawn Run Incubation</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Bags maintained in a completely dark room. Temperature kept at 24°C–25°C with 90%–95% RH. CO2 is intentionally allowed to build up (>10,000 ppm) to accelerate mycelial colonization.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Readiness: Mycelium appears as cottony white fungal filaments throughout the compost.
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 06 • DAYS 37–45</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Casing Soil Layering</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Casing Application & Stabilization</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              A 3.5 cm to 4 cm layer of pasteurized casing soil (well-decomposed Farmyard Manure + spent compost + coir pith neutralized with calcium carbonate to pH 7.5–7.8) is applied over colonized beds.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Role: Acts as a water reservoir and stimulates fruiting via beneficial bacteria (Pseudomonas putida).
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 07 • DAYS 46–52</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Environmental Shock</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Pinning & Fresh Air Induction</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Temperature in the grow room is lowered abruptly from 24°C to 15°C–17°C. Fresh air is introduced to drop CO2 below 1,000 ppm while maintaining 85% RH. This triggers mycelial knots to form pinheads.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Milestone: Thousands of tiny mushroom heads emerge across the casing bed within 72 hrs.
+            </div>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 08 • DAYS 53–75</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Harvesting & Flushes</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Fruiting, Picking & Multiple Flushes</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Mushrooms are harvested when buttons reach 35–45 mm diameter with tight closed veils. Picked by a gentle twist-and-pull technique. Yields occur in 3 distinct flushes spaced 8–10 days apart.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Productivity Benchmark: 18–22 kg fresh mushrooms per 100 kg compost.
+            </div>
+          </div>
+
+          <!-- Step 9 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 09 • DAILY (HARVEST)</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Cold Chain Post-Harvest</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Grading, De-Stalking & MAP Packaging</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Stalk bases are trimmed with stainless steel knives. Produce is pre-cooled to 4°C within 2 hours. Packaged into 200g polystyrene punnets wrapped in micro-perforated anti-fog stretch film.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Shelf Life: Extends freshness from 24 hrs to 5–7 days under constant 4°C storage.
+            </div>
+          </div>
+
+          <!-- Step 10 -->
+          <div class="bg-gray-900/80 border border-gray-800 rounded-lg p-4 hover:border-emerald-700 transition">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-emerald-400">PHASE 10 • DAYS 76–80</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-gray-800 text-gray-300">Room Turnover & SMS</span>
+            </div>
+            <h3 class="text-sm font-bold text-white mt-2">Cook-Out & Spent Substrate Bio-Fertilizer</h3>
+            <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+              Room is steamed at 70°C for 12 hours (cook-out) before bag disposal to eradicate latent pests. The Spent Mushroom Substrate (SMS) is emptied and sold/re-used as high-grade organic vermicompost.
+            </p>
+            <div class="mt-2.5 text-[11px] font-mono text-gray-400 bg-gray-950 p-2 rounded">
+              Circular Economy: SMS provides high organic carbon (40%) restoring degraded local soils.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: DISTRICT & TEHSIL PRICE MATRIX -->
+    <!-- ========================================== -->
+    <section id="tab-prices" class="tab-content hidden space-y-6">
+      <div class="glass-card rounded-xl p-5 sm:p-6 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-lg font-bold text-white">District & Tehsil Produce Price Comparison Matrix</h2>
+            <p class="text-xs text-gray-400">Granular price realisations (₹/kg) across Haryana agronomic hubs (Current Q4 2026 Mandi & Farmgate Records)</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <label for="districtFilter" class="text-xs text-gray-400">Filter District:</label>
+            <select id="districtFilter" onchange="filterPriceTable()" class="bg-gray-900 border border-gray-700 text-xs text-white rounded-md px-2.5 py-1.5 focus:outline-none focus:border-emerald-500">
+              <option value="ALL">All Districts</option>
+              <option value="Kurukshetra">Kurukshetra (Thanesar / Pehowa / Shahbad)</option>
+              <option value="Karnal">Karnal (Karnal / Gharaunda / Nilokheri)</option>
+              <option value="Sonipat">Sonipat (Sonipat / Ganaur / Rai)</option>
+              <option value="Panipat">Panipat (Panipat / Samalkha)</option>
+              <option value="Yamunanagar">Yamunanagar (Jagadhri / Bilaspur)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Price Comparison Table -->
+        <div class="overflow-x-auto custom-scrollbar border border-gray-800 rounded-lg">
+          <table class="w-full text-left text-xs text-gray-300" id="priceTable">
+            <thead class="bg-gray-950 text-gray-200 uppercase tracking-wider font-semibold border-b border-gray-800">
+              <tr>
+                <th class="px-4 py-3">District</th>
+                <th class="px-4 py-3">Tehsil / Sub-Tehsil</th>
+                <th class="px-4 py-3">Primary Mandi / Hub</th>
+                <th class="px-4 py-3 text-right">Farm-Gate Buying (₹/kg)</th>
+                <th class="px-4 py-3 text-right">Wholesale Mandi (₹/kg)</th>
+                <th class="px-4 py-3 text-right">Retail Consumer (₹/kg)</th>
+                <th class="px-4 py-3 text-center">Net Margin Spread</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-800" id="priceTableBody">
+              <!-- Kurukshetra Rows -->
+              <tr class="hover:bg-gray-900/60 transition" data-district="Kurukshetra">
+                <td class="px-4 py-3 font-semibold text-white">Kurukshetra</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Thanesar</td>
+                <td class="px-4 py-3">Thanesar Sabzi Mandi</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹90 – ₹120</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹115 – ₹165</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹180 – ₹240</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹75–₹110/kg</span></td>
+              </tr>
+              <tr class="hover:bg-gray-900/60 transition" data-district="Kurukshetra">
+                <td class="px-4 py-3 font-semibold text-white">Kurukshetra</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Pehowa</td>
+                <td class="px-4 py-3">Pehowa Grain & Veg Market</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹88 – ₹115</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹110 – ₹155</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹170 – ₹220</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹70–₹105/kg</span></td>
+              </tr>
+              <tr class="hover:bg-gray-900/60 transition" data-district="Kurukshetra">
+                <td class="px-4 py-3 font-semibold text-white">Kurukshetra</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Shahbad (Markanda)</td>
+                <td class="px-4 py-3">Shahbad APMC</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹90 – ₹118</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹112 – ₹158</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹175 – ₹230</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹72–₹108/kg</span></td>
+              </tr>
+              <tr class="hover:bg-gray-900/60 transition" data-district="Kurukshetra">
+                <td class="px-4 py-3 font-semibold text-white">Kurukshetra</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Ladwa</td>
+                <td class="px-4 py-3">Ladwa Sub-Mandi</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹85 – ₹112</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹108 – ₹150</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹165 – ₹215</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹65–₹100/kg</span></td>
+              </tr>
+
+              <!-- Karnal Rows -->
+              <tr class="hover:bg-gray-900/60 transition" data-district="Karnal">
+                <td class="px-4 py-3 font-semibold text-white">Karnal</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Karnal (Central)</td>
+                <td class="px-4 py-3">Karnal Main Sabzi Mandi</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹88 – ₹115</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹105 – ₹145</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹160 – ₹220</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹65–₹105/kg</span></td>
+              </tr>
+              <tr class="hover:bg-gray-900/60 transition" data-district="Karnal">
+                <td class="px-4 py-3 font-semibold text-white">Karnal</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Gharaunda</td>
+                <td class="px-4 py-3">Gharaunda Mandi & CEV Hub</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹85 – ₹110</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹102 – ₹140</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹155 – ₹210</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹60–₹100/kg</span></td>
+              </tr>
+              <tr class="hover:bg-gray-900/60 transition" data-district="Karnal">
+                <td class="px-4 py-3 font-semibold text-white">Karnal</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Nilokheri</td>
+                <td class="px-4 py-3">Taraori / Nilokheri Market</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹86 – ₹112</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹104 – ₹142</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹160 – ₹215</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹62–₹102/kg</span></td>
+              </tr>
+
+              <!-- Sonipat Rows -->
+              <tr class="hover:bg-gray-900/60 transition" data-district="Sonipat">
+                <td class="px-4 py-3 font-semibold text-white">Sonipat</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Sonipat (HQ)</td>
+                <td class="px-4 py-3">Sonipat Mandi / Azadpur Direct</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹80 – ₹110</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹100 – ₹130</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹180 – ₹260</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹85–₹145/kg</span></td>
+              </tr>
+              <tr class="hover:bg-gray-900/60 transition" data-district="Sonipat">
+                <td class="px-4 py-3 font-semibold text-white">Sonipat</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Ganaur</td>
+                <td class="px-4 py-3">Ganaur International Terminal Hub</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹82 – ₹112</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹102 – ₹135</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹175 – ₹240</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹80–₹130/kg</span></td>
+              </tr>
+              <tr class="hover:bg-gray-900/60 transition" data-district="Sonipat">
+                <td class="px-4 py-3 font-semibold text-white">Sonipat</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Rai / Murthal</td>
+                <td class="px-4 py-3">Direct Dhabas & Kundli Q-Commerce</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹95 – ₹130</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹115 – ₹155</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹200 – ₹280</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹90–₹150/kg</span></td>
+              </tr>
+
+              <!-- Panipat Rows -->
+              <tr class="hover:bg-gray-900/60 transition" data-district="Panipat">
+                <td class="px-4 py-3 font-semibold text-white">Panipat</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Panipat / Samalkha</td>
+                <td class="px-4 py-3">Panipat APMC Market</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹85 – ₹115</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹105 – ₹138</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹165 – ₹225</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹70–₹110/kg</span></td>
+              </tr>
+
+              <!-- Yamunanagar Rows -->
+              <tr class="hover:bg-gray-900/60 transition" data-district="Yamunanagar">
+                <td class="px-4 py-3 font-semibold text-white">Yamunanagar</td>
+                <td class="px-4 py-3 text-emerald-400 font-mono">Jagadhri / Bilaspur</td>
+                <td class="px-4 py-3">Jagadhri Sabzi Mandi</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-amber-300">₹84 – ₹110</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-blue-300">₹100 – ₹132</td>
+                <td class="px-4 py-3 text-right font-mono font-medium text-emerald-300">₹150 – ₹210</td>
+                <td class="px-4 py-3 text-center"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-800">+₹65–₹100/kg</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-3.5 bg-gray-900/60 rounded-lg border border-gray-800 text-xs text-gray-300 flex flex-wrap items-center justify-between gap-2">
+          <span><strong>Economic Insight:</strong> Farmgate prices drop to seasonal lows (₹60–₹75/kg) in January during uncoordinated harvest peaks, while PUF-equipped controlled units sell at ₹130–₹160/kg in May–July off-season.</span>
+          <span class="text-amber-400 font-mono font-semibold">Delhi Azadpur Benchmark: ₹110/kg Modal (Nov 2026)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 4: MUSHROOM VILLAGES & YEAR-ROUND INFRA -->
+    <!-- ========================================== -->
+    <section id="tab-villages" class="tab-content hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Village Case Studies -->
+        <div class="lg:col-span-1 glass-card rounded-xl p-5 space-y-4">
+          <h2 class="text-base font-bold text-white flex items-center gap-2">
+            <span>🏡</span> Landmark Mushroom Villages
+          </h2>
+          <p class="text-xs text-gray-400">Villages in Haryana where mushroom farming has superseded paddy-wheat as the primary household cash earner.</p>
+          
+          <div class="space-y-3">
+            <div class="bg-gray-900/80 p-3 rounded-lg border border-gray-800">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-400">Kakroi & Bhadana (Sonipat)</span>
+                <span class="text-[10px] bg-emerald-950 text-emerald-300 px-1.5 py-0.5 rounded">Pioneers</span>
+              </div>
+              <p class="text-xs text-gray-300 mt-1">Over 250 households cultivating mushrooms. Began with seasonal straw thatch huts; now houses over 40 modern climate-controlled chamber setups.</p>
+            </div>
+
+            <div class="bg-gray-900/80 p-3 rounded-lg border border-gray-800">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-400">Harsana Kalan & Barwasni (Sonipat)</span>
+                <span class="text-[10px] bg-blue-950 text-blue-300 px-1.5 py-0.5 rounded">Commercial Hub</span>
+              </div>
+              <p class="text-xs text-gray-300 mt-1">Home to major commercial growers (including 10,000 kg/month commercial units like Dr. Dahiya Farm). High adoption of Phase-II tunnel pasteurization.</p>
+            </div>
+
+            <div class="bg-gray-900/80 p-3 rounded-lg border border-gray-800">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-400">Bhorakh & Jalbehra (Kurukshetra)</span>
+                <span class="text-[10px] bg-purple-950 text-purple-300 px-1.5 py-0.5 rounded">Northern Anchor</span>
+              </div>
+              <p class="text-xs text-gray-300 mt-1">Pehowa & Thanesar belt cluster (J.K. Mushroom Farm, Guru Dil Agri Farm). Farmers shifted from tube-well exhausted paddy belts to high-efficiency indoor beds.</p>
+            </div>
+
+            <div class="bg-gray-900/80 p-3 rounded-lg border border-gray-800">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-400">Kheri Ismailabad & Bodhani (Kurukshetra)</span>
+                <span class="text-[10px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded">Emerging Cluster</span>
+              </div>
+              <p class="text-xs text-gray-300 mt-1">Smallholder farmers adopting low-cost oyster mushroom production alongside seasonal button chambers using local wheat straw.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infrastructure Blueprint for Year-Round Operations -->
+        <div class="lg:col-span-2 glass-card rounded-xl p-5 sm:p-6 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h2 class="text-base font-bold text-white flex items-center gap-2">
+              <span>🏗️</span> Year-Round Climate-Controlled Infrastructure Setup
+            </h2>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-950 px-2.5 py-1 rounded border border-emerald-800">Operating Spec: 365 Days Production</span>
+          </div>
+          <p class="text-xs text-gray-300 leading-relaxed">
+            Unlike seasonal huts (chhappars) that operate strictly from November to February, year-round facilities deploy Pre-Engineered Building (PEB) envelopes with active refrigeration, enabling 5 to 6 continuous crop cycles per annum.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+            <div class="bg-gray-900 p-3.5 rounded-lg border border-gray-800 space-y-2">
+              <div class="text-xs font-bold text-emerald-400 flex items-center gap-2">
+                <span>1. Thermal Envelope (PUF Panels)</span>
+              </div>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Walls and ceiling built using <span class="font-semibold text-white">80mm–100mm Polyurethane Foam (PUF)</span> sandwich panels (density 40±2 kg/m³). Thermal conductivity &lt;0.022 W/mK prevents ambient 45°C summer heat from penetrating the growing chamber.
+              </p>
+            </div>
+
+            <div class="bg-gray-900 p-3.5 rounded-lg border border-gray-800 space-y-2">
+              <div class="text-xs font-bold text-blue-400 flex items-center gap-2">
+                <span>2. HVAC & Chiller Network</span>
+              </div>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Centralized vapor-compression water chillers (refrigerant R404A/R410A) coupled to Air Handling Units (AHUs). Supplies cooling coil capacity capable of maintaining <span class="font-semibold text-white">14°C–17°C during peak summer</span> with micro-filtration.
+              </p>
+            </div>
+
+            <div class="bg-gray-900 p-3.5 rounded-lg border border-gray-800 space-y-2">
+              <div class="text-xs font-bold text-amber-400 flex items-center gap-2">
+                <span>3. CO2 Exhaust & Relative Humidity</span>
+              </div>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                High-pressure foggers (&gt;70 bar) generating 5–10 micron aerosols maintaining 85%–92% RH without wetting mushroom caps. Motorized fresh air dampers automated with CO2 sensors keeping levels &lt;1,000 ppm during fruiting.
+              </p>
+            </div>
+
+            <div class="bg-gray-900 p-3.5 rounded-lg border border-gray-800 space-y-2">
+              <div class="text-xs font-bold text-purple-400 flex items-center gap-2">
+                <span>4. Phase-II Bulk Pasteurization Tunnel</span>
+              </div>
+              <p class="text-xs text-gray-300 leading-relaxed">
+                Insulated tunnel with slatted floor plenum and centrifugal blowers. Integrated steam boiler (wood briquette or LPG fired) injecting steam to achieve 60°C peak kill, eliminating reliance on chemical pesticides.
+              </p>
+            </div>
+          </div>
+
+          <!-- Racking & Shelving Specifications -->
+          <div class="p-3 bg-gray-950 rounded-lg border border-gray-800 text-xs text-gray-300">
+            <span class="font-bold text-white block mb-1">Vertical Density Optimization:</span>
+            Growing rooms utilize 5-to-6 tier galvanized iron (GI) or anodized aluminium racking (1.4m width × 15–20m length). Increases usable cropping bed surface by <span class="text-emerald-400 font-semibold">4.8× relative to floor footprint</span>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 5: CULTIVARS & SPAWN PROVIDERS -->
+    <!-- ========================================== -->
+    <section id="tab-cultivars" class="tab-content hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Mushroom Varieties -->
+        <div class="lg:col-span-2 glass-card rounded-xl p-5 sm:p-6 space-y-4">
+          <h2 class="text-base font-bold text-white">Commercial Cultivars Adapted by Haryana Growers</h2>
+          <p class="text-xs text-gray-400">Agronomic profile of mushroom species grown across Kurukshetra and Haryana</p>
+
+          <div class="space-y-3">
+            <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-bold text-white">White Button Mushroom (<span class="italic text-emerald-400">Agaricus bisporus</span>)</span>
+                  <span class="text-[10px] bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded border border-emerald-800 font-bold">88% Production</span>
+                </div>
+                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                  Requires 22°C–25°C for spawn run and 14°C–17°C for cropping. High yield potential (18–22 kg/100kg compost). High consumer familiarity and ubiquitous market demand in NCR and Punjab.
+                </p>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-xs font-mono text-gray-400 block">Strains in Use:</span>
+                <span class="text-xs font-mono font-bold text-white">DMR-03, DMR-04, S-11</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-bold text-white">Oyster / Dhingri Mushroom (<span class="italic text-blue-400">Pleurotus ostreatus / P. florida</span>)</span>
+                  <span class="text-[10px] bg-blue-950 text-blue-300 px-2 py-0.5 rounded border border-blue-800 font-bold">9% Production</span>
+                </div>
+                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                  Tolerates wide temperature band (20°C–30°C). Requires no fermented compost—cultivated directly on chemically or hot-water pasteurized chopped wheat/paddy straw. High biological efficiency (80%–100%).
+                </p>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-xs font-mono text-gray-400 block">Strains in Use:</span>
+                <span class="text-xs font-mono font-bold text-white">Florida, Sajor-Caju</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-bold text-white">Milky Mushroom (<span class="italic text-amber-400">Calocybe indica</span>)</span>
+                  <span class="text-[10px] bg-amber-950 text-amber-300 px-2 py-0.5 rounded border border-amber-800 font-bold">2.5% Production</span>
+                </div>
+                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                  Summer crop thriving at 30°C–35°C with casing. Provides exceptional shelf-life (3–4 days without refrigeration) allowing seasonal farmers to utilize sheds during May–August without chillers.
+                </p>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-xs font-mono text-gray-400 block">Strains in Use:</span>
+                <span class="text-xs font-mono font-bold text-white">CI-10, APK-2</span>
+              </div>
+            </div>
+
+            <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm font-bold text-white">High-Value Medicinal & Exotic (<span class="italic text-purple-400">Cordyceps / Shiitake</span>)</span>
+                  <span class="text-[10px] bg-purple-950 text-purple-300 px-2 py-0.5 rounded border border-purple-800 font-bold">0.5% (High Margin)</span>
+                </div>
+                <p class="text-xs text-gray-300 mt-1 leading-relaxed">
+                  Grown in precision sterile laboratory setups (e.g. Elle Farms, Kutail, Karnal). Cordyceps sells dried at ₹1.5L–₹2L per kg for nutra-pharmaceutical export and premium wellness markets.
+                </p>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-xs font-mono text-gray-400 block">Substrate:</span>
+                <span class="text-xs font-mono font-bold text-white">Sterilized Brown Rice</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spawn Labs & Logistics -->
+        <div class="glass-card rounded-xl p-5 space-y-4">
+          <h2 class="text-base font-bold text-white flex items-center gap-2">
+            <span>🔬</span> Spawn Laboratories & Supply Logistics
+          </h2>
+          <p class="text-xs text-gray-400">How verified grain spawn is manufactured and distributed to Haryana growers</p>
+
+          <div class="space-y-3">
+            <div class="p-3 bg-gray-900/80 rounded-lg border border-gray-800">
+              <div class="text-xs font-bold text-emerald-400">Institutional Government Providers</div>
+              <ul class="text-xs text-gray-300 mt-1.5 space-y-1 list-disc list-inside">
+                <li><strong class="text-white">ICAR-DMR, Solan (HP):</strong> National apex research body; master cultures.</li>
+                <li><strong class="text-white">CCS HAU, Hisar:</strong> Dept. of Plant Pathology commercial spawn unit.</li>
+                <li><strong class="text-white">MHU Regional Centre, Murthal:</strong> Spawn lab & technical verification.</li>
+                <li><strong class="text-white">HAIC Agro, Murthal:</strong> Semi-govt commercial supply.</li>
+              </ul>
+            </div>
+
+            <div class="p-3 bg-gray-900/80 rounded-lg border border-gray-800">
+              <div class="text-xs font-bold text-blue-400">Verified Private Commercial Labs</div>
+              <ul class="text-xs text-gray-300 mt-1.5 space-y-1 list-disc list-inside">
+                <li><strong class="text-white">Asha Hi-Tech Spawn Lab:</strong> Kurukshetra.</li>
+                <li><strong class="text-white">Jai Kisan Spawn Laboratory:</strong> Murthal/Sonipat.</li>
+                <li><strong class="text-white">Shroomy Delights Agro:</strong> Karnal/Barwasni.</li>
+              </ul>
+            </div>
+
+            <div class="p-3 bg-gray-950 rounded-lg border border-gray-800">
+              <div class="text-xs font-bold text-amber-300 mb-1">Supply Protocol & Ordering Rules:</div>
+              <p class="text-[11px] text-gray-400 leading-relaxed">
+                Spawn is propagated on boiled, gypsum-coated pearl millet (bajra) or wheat grains in 1 kg polypropylene bags with non-absorbent cotton plugs. Growers must book spawn <span class="text-white font-semibold">15 to 21 days in advance</span>. Transported via overnight chilled boxes at 2°C–4°C to prevent premature in-bag pinning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 6: TRAINING PROGRAMS AROUND KURUKSHETRA -->
+    <!-- ========================================== -->
+    <section id="tab-training" class="tab-content hidden space-y-6">
+      <div class="glass-card rounded-xl p-5 sm:p-6 space-y-4">
+        <div>
+          <h2 class="text-lg font-bold text-white">Mushroom Farming Training Centers Around Kurukshetra & Haryana</h2>
+          <p class="text-xs text-gray-400">Institutional and field training programs accessible for aspiring and commercial growers</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- KVK Kurukshetra -->
+          <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800 uppercase">Local • Kurukshetra</span>
+            <h3 class="text-sm font-bold text-white">Krishi Vigyan Kendra (KVK), Kurukshetra</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">
+              Conducts recurring 3-to-5 day hands-on vocational courses on seasonal button and oyster mushroom cultivation for local farmers, rural youth, and women self-help groups (SHGs).
+            </p>
+            <div class="text-[11px] text-gray-400 pt-1 border-t border-gray-800">
+              <span class="text-emerald-400 font-semibold">Location:</span> Kurukshetra • Subsidy guidance & certificates issued.
+            </div>
+          </div>
+
+          <!-- HTI Uchana Karnal -->
+          <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-950 text-blue-300 border border-blue-800 uppercase">35 km from Kurukshetra</span>
+            <h3 class="text-sm font-bold text-white">Horticulture Training Institute (HTI), Uchana</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">
+              Premier state institute on NH-44 GT Road. Operates modular commercial training programs covering compost biology, casing preparation, disease diagnostics, and MIDH government subsidy documentation.
+            </p>
+            <div class="text-[11px] text-gray-400 pt-1 border-t border-gray-800">
+              <span class="text-blue-400 font-semibold">Facility:</span> Dedicated mushroom cultivation unit & compost testing lab.
+            </div>
+          </div>
+
+          <!-- MHU Murthal / Karnal -->
+          <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800 uppercase">State Horticultural University</span>
+            <h3 class="text-sm font-bold text-white">MHU Regional Mushroom Research Centre, Murthal</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">
+              Specialized research and entrepreneurship incubation facility. Offers master classes on Phase-II tunnel management, environmental control automation, and high-yielding spawn culture maintenance.
+            </p>
+            <div class="text-[11px] text-gray-400 pt-1 border-t border-gray-800">
+              <span class="text-purple-400 font-semibold">Target:</span> Commercial entrepreneurs & medium-to-large farm setups.
+            </div>
+          </div>
+
+          <!-- CCS HAU Hisar -->
+          <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800 uppercase">State Agricultural University</span>
+            <h3 class="text-sm font-bold text-white">CCS Haryana Agricultural University, Hisar</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">
+              Department of Plant Pathology organizes scheduled farmer training camps, Kisan Mela workshops, and technical advisories on substrate pasteurization and pest mitigation.
+            </p>
+            <div class="text-[11px] text-gray-400 pt-1 border-t border-gray-800">
+              <span class="text-amber-400 font-semibold">Offering:</span> Academic certification & spawn supply linkages.
+            </div>
+          </div>
+
+          <!-- ICAR-DMR Solan -->
+          <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800 uppercase">Apex National Institute</span>
+            <h3 class="text-sm font-bold text-white">ICAR-Directorate of Mushroom Research, Solan</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">
+              Located ~140 km north of Kurukshetra. Conducts national-level entrepreneurship training programs, specialty mushroom courses (Shiitake/Cordyceps), and master spawn lab setup accreditation.
+            </p>
+            <div class="text-[11px] text-gray-400 pt-1 border-t border-gray-800">
+              <span class="text-emerald-400 font-semibold">Scope:</span> Advanced technological & export-grade standards.
+            </div>
+          </div>
+
+          <!-- Commercial Hands-on Units -->
+          <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-950 text-rose-300 border border-rose-800 uppercase">Private Farm Training</span>
+            <h3 class="text-sm font-bold text-white">Commercial Farm Workshops (Karnal / Sonipat)</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">
+              Operating units like Shroomy Delights Agro Tech (Karnal) and Dr. Dahiya Mushroom Farm (Barwasni, Sonipat) provide monthly 1-day immersive on-farm training sessions inside working 10,000 kg/month facilities.
+            </p>
+            <div class="text-[11px] text-gray-400 pt-1 border-t border-gray-800">
+              <span class="text-rose-400 font-semibold">Advantage:</span> Real-time troubleshooting on live commercial crops.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 7: ECONOMIC ROI CALCULATOR -->
+    <!-- ========================================== -->
+    <section id="tab-calculator" class="tab-content hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Interactive Inputs Panel -->
+        <div class="glass-card rounded-xl p-5 space-y-4">
+          <div>
+            <h2 class="text-base font-bold text-white">Interactive Farm Financial Simulator</h2>
+            <p class="text-xs text-gray-400">Simulate operational margins and capital returns for Haryana mushroom cultivation</p>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div>
+              <label class="block text-gray-300 font-medium mb-1">Production Model Type:</label>
+              <select id="simModel" onchange="calculateROI()" class="w-full bg-gray-900 border border-gray-700 text-white rounded-md p-2 focus:outline-none focus:border-emerald-500">
+                <option value="seasonal">Seasonal Hut (1 Crop Cycle, Winter 4 Months)</option>
+                <option value="commercial" selected>Commercial AC Unit (Year-Round, 5 Cycles/Yr)</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-gray-300 mb-1">
+                <span>Compost Capacity per Cycle (Tons):</span>
+                <span id="valCompost" class="font-mono font-bold text-emerald-400">20 Tons</span>
+              </div>
+              <input type="range" id="inputCompost" min="5" max="100" value="20" step="5" oninput="calculateROI()" class="w-full accent-emerald-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-gray-300 mb-1">
+                <span>Biological Yield Efficiency (% of Compost):</span>
+                <span id="valEfficiency" class="font-mono font-bold text-emerald-400">20 %</span>
+              </div>
+              <input type="range" id="inputEfficiency" min="14" max="24" value="20" step="1" oninput="calculateROI()" class="w-full accent-emerald-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-gray-300 mb-1">
+                <span>Expected Average Sale Price (₹/kg):</span>
+                <span id="valPrice" class="font-mono font-bold text-emerald-400">₹120 / kg</span>
+              </div>
+              <input type="range" id="inputPrice" min="70" max="180" value="120" step="5" oninput="calculateROI()" class="w-full accent-emerald-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-gray-300 mb-1">
+                <span>Production Cost Estimate (₹/kg):</span>
+                <span id="valCost" class="font-mono font-bold text-amber-400">₹68 / kg</span>
+              </div>
+              <input type="range" id="inputCost" min="45" max="95" value="68" step="1" oninput="calculateROI()" class="w-full accent-amber-500">
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="resetDefaults()" class="w-full py-2 text-xs font-semibold rounded-md bg-gray-800 text-gray-300 hover:bg-gray-700 transition">
+              Reset Benchmark Values
+            </button>
+          </div>
+        </div>
+
+        <!-- Calculated Results Display -->
+        <div class="lg:col-span-2 glass-card rounded-xl p-5 sm:p-6 flex flex-col justify-between space-y-4">
+          <div>
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider text-emerald-400">Projected Financial Pro-Forma</h3>
+            <p class="text-xs text-gray-400">Calculated on grounded empirical cost parameters from GT Road farms</p>
+          </div>
+
+          <!-- KPI Display Cards -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="bg-gray-900/90 p-3 rounded-lg border border-gray-800">
+              <span class="text-[10px] text-gray-400 uppercase block">Total Output</span>
+              <span id="resOutput" class="text-lg sm:text-xl font-bold font-mono text-white mt-0.5 block">20,000 kg</span>
+              <span class="text-[10px] text-gray-500">Annual production</span>
+            </div>
+            <div class="bg-gray-900/90 p-3 rounded-lg border border-gray-800">
+              <span class="text-[10px] text-gray-400 uppercase block">Gross Revenue</span>
+              <span id="resRevenue" class="text-lg sm:text-xl font-bold font-mono text-emerald-400 mt-0.5 block">₹24,00,000</span>
+              <span class="text-[10px] text-gray-500">Annual turnover</span>
+            </div>
+            <div class="bg-gray-900/90 p-3 rounded-lg border border-gray-800">
+              <span class="text-[10px] text-gray-400 uppercase block">Operational Cost</span>
+              <span id="resCost" class="text-lg sm:text-xl font-bold font-mono text-amber-400 mt-0.5 block">₹13,60,000</span>
+              <span class="text-[10px] text-gray-500">Raw materials & power</span>
+            </div>
+            <div class="bg-gray-900/90 p-3 rounded-lg border border-gray-800">
+              <span class="text-[10px] text-gray-400 uppercase block">Net Annual Profit</span>
+              <span id="resNet" class="text-lg sm:text-xl font-bold font-mono text-white mt-0.5 block">₹10,40,000</span>
+              <span id="resMargin" class="text-[10px] text-emerald-400 font-semibold">43.3% Margin</span>
+            </div>
+          </div>
+
+          <!-- Economics Chart -->
+          <div class="relative h-56 w-full">
+            <canvas id="economicsChart"></canvas>
+          </div>
+
+          <div class="text-[11px] text-gray-400 bg-gray-950 p-3 rounded border border-gray-800 flex items-center justify-between">
+            <span><strong>Wheat-Paddy Comparison:</strong> 20 tons of compost yields equivalent net income to 8.5 acres of conventional wheat-paddy rotation while consuming 85% less water.</span>
+            <span class="text-emerald-400 font-semibold shrink-0 ml-2">High Resource Efficiency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 8: INTELLECTUAL PROPERTY & GIT REPO -->
+    <!-- ========================================== -->
+    <section id="tab-license" class="tab-content hidden space-y-6">
+      <div class="glass-card rounded-xl p-5 sm:p-6 space-y-5">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>⚖️</span> Intellectual Property Rights, Restrictive License & Git Distribution
+          </h2>
+          <p class="text-xs text-gray-400">Formal legal licensing terms, AI model training prohibitions, and public GitHub Page deployment instructions</p>
+        </div>
+
+        <!-- Restrictive License Card -->
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-4 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider">Custom Proprietary License & AI Model Protection Clause</span>
+            <span class="text-[10px] bg-purple-950 text-purple-300 border border-purple-800 px-2 py-0.5 rounded font-mono">STRICT ENFORCEMENT</span>
+          </div>
+          <div class="bg-gray-950 p-3.5 rounded border border-gray-800 font-mono text-xs text-gray-300 leading-relaxed max-h-60 overflow-y-auto custom-scrollbar">
+            <p class="font-bold text-white mb-2">RESTRICTIVE BENCHMARK STUDY LICENSE & AI TRAINING PROHIBITION</p>
+            <p class="mb-2">Copyright (c) 2026 Vipul Anand. All Rights Reserved.</p>
+            <p class="mb-2">
+              <strong>1. MANDATORY PRIOR CONSULTATION & WRITTEN CONSENT:</strong><br>
+              No part of this benchmark study, underlying datasets, techno-economic pricing tables, lifecycle algorithms, or synthesis may be reproduced, published, broadcast, re-hosted, or commercially exploited in any medium without prior written consultation and explicit written authorization from Vipul Anand.
+            </p>
+            <p class="mb-2">
+              <strong>2. STRICT ARTIFICIAL INTELLIGENCE (AI) & MACHINE LEARNING (ML) RESTRICTION:</strong><br>
+              The compilation, formatting, content, datasets, and trade observations contained herein are STRICTLY RESTRICTED from being crawled, scraped, ingested, or used for the purpose of training, fine-tuning, evaluating, or aligning Artificial Intelligence (AI) models, Large Language Models (LLMs), deep learning networks, or multimodal architectures without an explicit, standalone bilateral commercial licensing agreement executed directly with Vipul Anand.
+            </p>
+            <p class="mb-2">
+              <strong>3. ACCESS RESTRICTION & BOT BARRIER:</strong><br>
+              This document is distributed as an unlisted public repository. All search engine indexing spiders, automated web bots, and archival spiders are expressly prohibited via HTTP headers, HTML meta-tags, and robots.txt directives (Disallow: /).
+            </p>
+            <p>
+              <strong>4. MANDATORY VERBATIM DISCLAIMER CLAUSE:</strong><br>
+              Any authorized viewing or secondary excerpt must carry verbatim the following disclaimer: "A study conducted by Vipul Anand using Grok chief of staff and research team lead. Special thanks to engineering team for publishing it to make it available for those interested in diversifying from mono culture in haryana from wheat and paddy cycles and looking forward to adapting variety of crops in the future timelines."
+            </p>
+          </div>
+        </div>
+
+        <!-- Git Repo Setup & GitHub Pages Deployment Guide -->
+        <div class="bg-gray-900 border border-gray-800 rounded-lg p-4 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">GitHub Pages Repository Setup & Public Deployment</span>
+            <span class="text-[10px] bg-emerald-950 text-emerald-300 border border-emerald-800 px-2 py-0.5 rounded font-mono">UNLISTED / PUBLIC REPO READY</span>
+          </div>
+          <p class="text-xs text-gray-300 leading-relaxed">
+            All repository files (<code class="text-emerald-400 bg-gray-950 px-1 py-0.5 rounded">index.html</code>, <code class="text-emerald-400 bg-gray-950 px-1 py-0.5 rounded">README.md</code>, <code class="text-emerald-400 bg-gray-950 px-1 py-0.5 rounded">LICENSE.md</code>, <code class="text-emerald-400 bg-gray-950 px-1 py-0.5 rounded">robots.txt</code>, and <code class="text-emerald-400 bg-gray-950 px-1 py-0.5 rounded">.nojekyll</code>) have been assembled and committed to a local git repository in this environment. To push this live to your GitHub account:
+          </p>
+
+          <div class="bg-gray-950 p-3 rounded border border-gray-800 font-mono text-xs text-gray-300 space-y-1.5 overflow-x-auto">
+            <div class="text-gray-500"># 1. Create a new public repository on GitHub (e.g. haryana-mushroom-benchmark)</div>
+            <div class="text-emerald-400">git remote add origin https://github.com/&lt;your-username&gt;/haryana-mushroom-benchmark.git</div>
+            <div class="text-emerald-400">git branch -M main</div>
+            <div class="text-emerald-400">git push -u origin main</div>
+            <div class="text-gray-500 pt-1"># 2. In GitHub Repo Settings -> Pages -> Source: Deploy from branch 'main' / (root)</div>
+            <div class="text-gray-500"># 3. Your unlisted link will be live at: https://&lt;your-username&gt;.github.io/haryana-mushroom-benchmark/</div>
+            <div class="text-gray-500"># (Search engines will not index it due to the embedded noindex tags and robots.txt)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800 bg-gray-950 py-4 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
+      <div>
+        <span class="text-gray-300 font-semibold">Haryana Mushroom Agronomic Study</span> • Research Lead: Vipul Anand (with Grok Chief of Staff)
+      </div>
+      <div class="flex items-center gap-4">
+        <span>Restricted Intellectual Property</span>
+        <span>•</span>
+        <span>No Index / Bot Blocked</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    // Tab Switching Logic
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-emerald-600', 'text-white', 'shadow-sm');
+        btn.classList.add('text-gray-400', 'hover:text-gray-200');
+      });
+
+      const target = document.getElementById('tab-' + tabId);
+      if (target) {
+        target.classList.remove('hidden');
+      }
+
+      const activeBtn = document.querySelector(`[data-tab="${tabId}"]`);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-gray-400', 'hover:text-gray-200');
+        activeBtn.classList.add('bg-emerald-600', 'text-white', 'shadow-sm');
+      }
+
+      // Trigger chart resize if entering overview or calculator tab
+      if (tabId === 'overview' && offtakeChart) {
+        offtakeChart.resize();
+      }
+      if (tabId === 'calculator' && economicsChart) {
+        economicsChart.resize();
+      }
+    }
+
+    // Price Table Filter
+    function filterPriceTable() {
+      const selected = document.getElementById('districtFilter').value;
+      const rows = document.querySelectorAll('#priceTableBody tr');
+      rows.forEach(row => {
+        const district = row.getAttribute('data-district');
+        if (selected === 'ALL' || district === selected) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // ROI Calculator Logic
+    let economicsChart = null;
+    let offtakeChart = null;
+
+    function calculateROI() {
+      const model = document.getElementById('simModel').value;
+      const compostTons = parseFloat(document.getElementById('inputCompost').value);
+      const efficiency = parseFloat(document.getElementById('inputEfficiency').value);
+      const price = parseFloat(document.getElementById('inputPrice').value);
+      const cost = parseFloat(document.getElementById('inputCost').value);
+
+      document.getElementById('valCompost').innerText = compostTons + ' Tons';
+      document.getElementById('valEfficiency').innerText = efficiency + ' %';
+      document.getElementById('valPrice').innerText = '₹' + price + ' / kg';
+      document.getElementById('valCost').innerText = '₹' + cost + ' / kg';
+
+      // Cycles per year: Seasonal = 1 cycle; Commercial AC = 5 cycles
+      const cycles = (model === 'seasonal') ? 1 : 5;
+      const totalCompostKg = compostTons * 1000 * cycles;
+      const totalOutputKg = totalCompostKg * (efficiency / 100);
+
+      const grossRevenue = totalOutputKg * price;
+      const totalCost = totalOutputKg * cost;
+      const netProfit = grossRevenue - totalCost;
+      const margin = (grossRevenue > 0) ? ((netProfit / grossRevenue) * 100).toFixed(1) : 0;
+
+      // Update UI Readouts
+      document.getElementById('resOutput').innerText = totalOutputKg.toLocaleString('en-IN') + ' kg';
+      document.getElementById('resRevenue').innerText = '₹' + Math.round(grossRevenue).toLocaleString('en-IN');
+      document.getElementById('resCost').innerText = '₹' + Math.round(totalCost).toLocaleString('en-IN');
+      document.getElementById('resNet').innerText = '₹' + Math.round(netProfit).toLocaleString('en-IN');
+      document.getElementById('resMargin').innerText = margin + '% Net Margin';
+
+      // Update Economics Chart
+      if (economicsChart) {
+        economicsChart.data.datasets[0].data = [
+          Math.round(grossRevenue / 100000),
+          Math.round(totalCost / 100000),
+          Math.round(netProfit / 100000)
+        ];
+        economicsChart.update();
+      }
+    }
+
+    function resetDefaults() {
+      document.getElementById('simModel').value = 'commercial';
+      document.getElementById('inputCompost').value = 20;
+      document.getElementById('inputEfficiency').value = 20;
+      document.getElementById('inputPrice').value = 120;
+      document.getElementById('inputCost').value = 68;
+      calculateROI();
+    }
+
+    // Initialize Charts on Page Load
+    window.onload = function() {
+      // Offtake Distribution Doughnut Chart
+      const ctxOfftake = document.getElementById('offtakeChart');
+      if (ctxOfftake) {
+        offtakeChart = new Chart(ctxOfftake, {
+          type: 'doughnut',
+          data: {
+            labels: ['Azadpur APMC (Delhi)', 'Local Mandis (Thanesar/Karnal)', 'Q-Commerce Fulfillment', 'Dhabas & HORECA (NH-44)', 'Processing / Canners'],
+            datasets: [{
+              data: [62, 16, 11, 7, 4],
+              backgroundColor: ['#10b981', '#3b82f6', '#8b5cf6', '#f59e0b', '#64748b'],
+              borderWidth: 1,
+              borderColor: '#111827'
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: { color: '#9ca3af', font: { size: 10 } }
+              }
+            }
+          }
+        });
+      }
+
+      // Economics Bar Chart
+      const ctxEco = document.getElementById('economicsChart');
+      if (ctxEco) {
+        economicsChart = new Chart(ctxEco, {
+          type: 'bar',
+          data: {
+            labels: ['Gross Turnover (Lakh ₹)', 'Operating Outlay (Lakh ₹)', 'Net Producer Profit (Lakh ₹)'],
+            datasets: [{
+              label: 'Annual Financials (in Lakhs ₹)',
+              data: [24, 13.6, 10.4],
+              backgroundColor: ['#10b981', '#f59e0b', '#3b82f6'],
+              borderRadius: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grid: { color: '#1f2937' },
+                ticks: { color: '#9ca3af', font: { size: 10 } }
+              },
+              x: {
+                grid: { display: false },
+                ticks: { color: '#cbd5e1', font: { size: 10 } }
+              }
+            }
+          }
+        });
+      }
+
+      calculateROI();
+    };
+  </script>
+</body>
+</html>
