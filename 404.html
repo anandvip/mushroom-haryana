@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  Reusable access-denied page for this GitHub Pages site.
+  To hide any page for now, delete that file or point its links here (href="404.html").
+  GitHub Pages also serves this file automatically for any missing URL.
+  To restore a hidden page, bring the file back from git history and point the links at it again.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<title>Access denied</title>
+<style>
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1.5rem;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color:#fcfcfa;
+  background:linear-gradient(160deg,#1f2933 0%,#2f4716 42%,#3d5a1e 72%,#6b8e23 100%);
+  text-align:center;
+}
+main{max-width:40rem}
+h1{
+  margin:0 0 .6rem;
+  font-size:clamp(3rem,10vw,7rem);
+  line-height:.95;
+  font-weight:750;
+  letter-spacing:-.03em;
+  color:#fcfcfa;
+  text-shadow:0 2px 16px rgba(31,41,51,.35);
+}
+.lede{
+  margin:0 0 1.8rem;
+  font-size:clamp(1rem,2.4vw,1.25rem);
+  line-height:1.45;
+  color:#eef3e6;
+}
+.actions{display:flex;flex-wrap:wrap;gap:.9rem 1.2rem;align-items:center;justify-content:center}
+.back{
+  display:inline-block;
+  background:#fcfcfa;
+  color:#3d5a1e;
+  text-decoration:none;
+  font-weight:600;
+  padding:.7rem 1.15rem;
+  border-radius:6px;
+}
+.back:hover{background:#eef3e6;color:#2f4716}
+.home{
+  color:#eef3e6;
+  font-size:.95rem;
+  text-decoration:underline;
+  text-underline-offset:.2em;
+}
+.home:hover{color:#fcfcfa}
+.back:focus-visible,.home:focus-visible{outline:3px solid #fcfcfa;outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Access denied</h1>
+  <p class="lede">Private data — this page is not public right now.</p>
+  <div class="actions">
+    <a class="back" id="go-back" href="/">← Go back</a>
+    <a class="home" href="/">Home</a>
+  </div>
+</main>
+<script>
+(function () {
+  var back = document.getElementById('go-back');
+  if (!back) return;
+  back.addEventListener('click', function (e) {
+    e.preventDefault();
+    var sameSite = false;
+    try {
+      if (document.referrer) {
+        sameSite = new URL(document.referrer).origin === location.origin;
+      }
+    } catch (err) {}
+    if (sameSite || history.length > 1) {
+      history.back();
+    } else {
+      location.href = '/';
+    }
+  });
+})();
+</script>
+</body>
+</html>
