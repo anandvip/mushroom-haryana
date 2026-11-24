@@ -34,6 +34,7 @@ First edition 10 Nov 2026, revised 23 Nov 2026.</p>
 <h2 id="toc-h" class="revh">Contents</h2>
 <ol>
 <li><a href="#s1">1. Summary</a></li>
+<li><a href="#methods">Methods</a></li>
 <li><a href="#s2">2. Home area</a></li>
 <li><a href="#s3">3. Training programmes in Haryana</a></li>
 <li><a href="#s4">4. Farms listed online</a></li>
@@ -65,7 +66,6 @@ First edition 10 Nov 2026, revised 23 Nov 2026.</p>
 <li><strong>Biggest gaps:</strong> Agmarknet does not publish any farm-gate (buying) price series by tehsil. JustDial and Google Maps counts could not be pulled. This study found no published "mushroom village" census.</li>
 </ul>
 <hr />
-<!-- METHODS: place after §1 -->
 <h2 id="methods">Methods</h2>
 <ul>
 <li><strong>Search period:</strong> 10–23 Nov 2026 (first edition 10 Nov, revision 23 Nov; a few links re-checked 24 Nov). Each source's check date is in §18.</li>
@@ -1196,7 +1196,7 @@ d.addEventListener("close",function(){if(src&&src.focus)src.focus()});})();
 <label>Crop cycles per season <input type="number" id="c-cy" min="1" step="1" value="1"></label>
 <label>Compost per bag (kg) <input type="number" id="c-sck" min="0" step="any" value="20"></label>
 <label>Spawn rate (% of compost weight) <input type="number" id="c-sr" min="0" step="any" value="0.5"></label>
-<p class="note">20 × 10 ft = 200 sq ft, the MIDH low-cost unit size [S12]; height, bags and racks have no sourced default (<span class="ph">placeholder</span>). Compost per bag: 20 kg, the low end of the 20–25 kg bag size [S29]. Spawn rate: 0.5%, the low end of ICAR-DMR's recommended 0.5–0.75% of compost weight [S29].</p>
+<p class="note">20 × 10 ft = 200 sq ft, the MIDH low-cost unit size [S12]; height, bags and racks have no sourced default (<span class="ph">placeholder</span>). Compost per bag: 20 kg, the low end of the 20–25 kg bag size [S29]. Spawn rate: 0.5%, the low end of the recommended 0.5–0.75% of compost weight [S29] (ICAR-DMR: 0.5–0.7% of wet compost [S55]).</p>
 </fieldset>
 <fieldset><legend>Materials and costs (quantities are totals for all huts)</legend>
 <table><thead><tr><th>Item</th><th>Qty</th><th>Unit</th><th>Rate ₹</th><th>Per cycle?</th><th class="n">Amount</th><th>Source / note</th><th></th></tr></thead><tbody id="c-lines"></tbody></table>
@@ -1208,7 +1208,7 @@ d.addEventListener("close",function(){if(src&&src.focus)src.focus()});})();
 <label id="c-ybag">kg per bag <input type="number" id="c-y1" min="0" step="any" value="2"></label>
 <span id="c-ycmp" hidden><label>kg per 100 kg compost <input type="number" id="c-y2" min="0" step="any" value=""></label><label>compost kg per bag <input type="number" id="c-ck" min="0" step="any" value=""></label></span>
 <label>Price ₹/kg (editable) <input type="number" id="c-p" min="0" step="any" value="200"></label>
-<p class="note">~2 kg per bag is a Sonipat grower's figure [S11]. Per 100 kg compost: 10–14 kg (long method), 15–20 kg (short method) [S29]; bags of 20–25 kg compost [S29]. Price default: ₹200/kg modal, Haryana (Kurukshetra market), 21 Nov 2026 [S39]; prices swung ₹80–225/kg in Nov 2026 (§14).</p>
+<p class="note">~2 kg per bag is a Sonipat grower's figure [S11]. Per 100 kg compost: 10–14 kg (long method), 18–25 kg (short method) [S55] (the older NHB report gives 15–20 kg [S29]); bags of 20–25 kg compost [S29]. Price default: ₹200/kg modal, Haryana (Kurukshetra market), 21 Nov 2026 [S39]; prices swung ₹80–225/kg in Nov 2026 (§14).</p>
 </fieldset>
 <h3>Estimate</h3>
 <table><thead><tr><th>Item</th><th class="n">Qty</th><th>Unit</th><th class="n">Rate</th><th class="n">× cycles</th><th class="n">Amount</th></tr></thead><tbody id="c-out"></tbody></table>
