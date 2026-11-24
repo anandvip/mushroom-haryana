@@ -1181,12 +1181,14 @@ d.addEventListener("close",function(){if(src&&src.focus)src.focus()});})();
 <label>Bags or trays per hut <input type="number" id="c-b" min="0" step="1" value="" placeholder="enter"></label>
 <label>Racks per hut <input type="number" id="c-r" min="0" step="1" value="" placeholder="enter"></label>
 <label>Crop cycles per season <input type="number" id="c-cy" min="1" step="1" value="1"></label>
-<p class="note">20 × 10 ft = 200 sq ft, the MIDH low-cost unit size [S12]; height, bags and racks have no sourced default (<span class="ph">placeholder</span>).</p>
+<label>Compost per bag (kg) <input type="number" id="c-sck" min="0" step="any" value="20"></label>
+<label>Spawn rate (% of compost weight) <input type="number" id="c-sr" min="0" step="any" value="0.5"></label>
+<p class="note">20 × 10 ft = 200 sq ft, the MIDH low-cost unit size [S12]; height, bags and racks have no sourced default (<span class="ph">placeholder</span>). Compost per bag: 20 kg, the low end of the 20–25 kg bag size [S29]. Spawn rate: 0.5%, the low end of ICAR-DMR's recommended 0.5–0.75% of compost weight [S29].</p>
 </fieldset>
 <fieldset><legend>Materials and costs (quantities are totals for all huts)</legend>
 <table><thead><tr><th>Item</th><th>Qty</th><th>Unit</th><th>Rate ₹</th><th>Per cycle?</th><th class="n">Amount</th><th>Source / note</th><th></th></tr></thead><tbody id="c-lines"></tbody></table>
 <button type="button" class="calc-btn" id="c-add">+ Add line</button>
-<p class="note">"Per cycle" lines are multiplied by crop cycles; others (the hut structure) are counted once. Auto quantities follow hut inputs until you type over them. Polythene: huts × [2 × (L + W) × H + L × W] sq ft (walls plus a flat-roof approximation; add your own overlap). Spawn: total bags ÷ 100, from the Sonipat practice of 1 kg spawn for 100 bags [S11]; ICAR-DMR's NHB report gives 0.5–0.75% of compost weight [S29].</p>
+<p class="note">"Per cycle" lines are multiplied by crop cycles; others (the hut structure) are counted once. Auto quantities follow hut inputs until you type over them. Polythene: huts × [2 × (L + W) × H + L × W] sq ft (walls plus a flat-roof approximation; add your own overlap). Spawn: total bags × compost per bag × spawn rate ÷ 100, at the recommended 0.5–0.75% of compost weight [S29]. A Sonipat grower reports 1 kg spawn for 100 bags [S11], which at 20–25 kg per bag is only about 0.04–0.05%, far below the recommended rate.</p>
 </fieldset>
 <fieldset><legend>Optional: yield and revenue</legend>
 <label>Yield basis <select id="c-ym"><option value="bag">kg per bag</option><option value="cmp">kg per 100 kg compost</option></select></label>
@@ -1219,7 +1221,7 @@ var DEF=[
 ["Paddy straw / thatch","","quintal","",0,"placeholder, enter your local rate"],
 ["Polythene sheet","auto:poly","sq ft","",0,"placeholder rate; qty computed from hut size (formula below)"],
 ["Wheat straw for compost","","quintal","",1,"placeholder, enter your local rate"],
-["Spawn","auto:spawn","kg","85",1,"₹85/kg, Bajwa, Kurukshetra, Sep 2023 [S15]; HAIC Sonipat ₹80–85/kg [S11]; qty [S11]"],
+["Spawn","auto:spawn","kg","85",1,"₹85/kg, Bajwa, Kurukshetra, Sep 2023 [S15]; HAIC Sonipat ₹80–85/kg [S11]; qty: 0.5–0.75% of compost weight [S29]"],
 ["Chemicals / supplements (name only, no doses)","","lump sum","",1,"placeholder; ask KVK what to use (§13)"],
 ["Labour","","person-days","",1,"placeholder, enter your local rate"],
 ["Water","","lump sum","",1,"placeholder"],
@@ -1247,7 +1249,7 @@ var rows=[],total=0,out="";
 body.querySelectorAll("tr").forEach(function(tr){
 var q=tr.querySelector(".q");
 if(tr.dataset.auto==="poly")q.value=+(N*(2*(L+W)*H+L*W)).toFixed(2)||"";
-if(tr.dataset.auto==="spawn")q.value=+(bags/100).toFixed(2)||"";
+if(tr.dataset.auto==="spawn")q.value=+(bags*v("c-sck")*v("c-sr")/100).toFixed(2)||"";
 var qty=parseFloat(q.value)||0,rate=parseFloat(tr.querySelector(".rt").value)||0,pc=tr.querySelector(".pc").checked,m=pc?CY:1,amt=qty*rate*m;
 var nm=tr.querySelector(".nm").value.trim()||"(unnamed)",u=tr.querySelector(".u").value.trim();
 tr.querySelector(".am").textContent=money(amt);total+=amt;
@@ -1256,7 +1258,7 @@ out+="<tr><td>"+esc(nm)+'</td><td class="n">'+num.format(qty)+"</td><td>"+esc(u)
 out+='<tr class="tot"><td colspan="5">Total</td><td class="n">'+money(total)+"</td></tr>";
 $("c-out").innerHTML=out;
 var perHut=N?money(total/N):"— (enter huts)",bagCycles=bags*CY,perBag=bagCycles?money(total/bagCycles):"— (enter bags)";
-var kgBag=$("c-ym").value==="bag"?v("c-y1"):v("c-y2")*v("c-ck")/100,price=v("c-p"),kg=bagCycles*kgBag,rev=kg*price;
+var kgBag=$("c-ym").value==="bag"?v("c-y1"):v("c-y2")*(v("c-ck")||v("c-sck"))/100,price=v("c-p"),kg=bagCycles*kgBag,rev=kg*price;
 var s="<p><strong>Total: "+money(total)+"</strong> · Cost per hut: "+perHut+" · Cost per bag (per bag per cycle): "+perBag+"</p>";
 if(kg&&price)s+="<p>Revenue estimate (optional): "+num.format(kg)+" kg × "+money(price)+"/kg = <strong>"+money(rev)+"</strong>; revenue minus estimated cost = "+money(rev-total)+"</p>";
 else s+='<p class="note">Revenue estimate: enter bags and a yield to see it.</p>';
